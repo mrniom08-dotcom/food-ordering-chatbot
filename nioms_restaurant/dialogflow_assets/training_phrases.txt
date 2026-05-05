@@ -1,0 +1,108 @@
+# Niom's Restaurant - Dialogflow Training Phrases
+
+Default Welcome Intent
+======================
+Text response:
+    Hello! Welcome to Niom's Restaurant. How can I help you? You can say "New Order" or "Track Order".
+    Good day! Welcome to Niom's Restaurant. What can I do for you? You can say "New Order" or "Track Order".
+    Greetings! Welcome to Niom's Restaurant. How can I assist you? You can say "New Order" or "Track Order".
+
+
+Default Fallback Intent
+========================
+Text Response:
+    I didn't understand. You can say 'New Order' or 'Track Order'. In a new order, please mention only items from our menu:
+    Chicken Biryani, Murug Polaw, Beef Biryani, Mutton Biryani, Kacchi, Afgani Polaw, Rice, Beef, Mutton Curry, Ilish Fish, and Chingri Curry.
+    Also specify a quantity for each item — for example: "1 Kacchi and 2 Chicken Biryani".
+
+
+Intent= new.order
+=================
+Training phrases:
+    new order
+    place new order
+    I want to order food
+    start order
+
+Text Response:
+    Ok, starting a new order! You can say things like "I want 2 Chicken Biryani and 1 Kacchi". Make sure to specify a quantity for every item!
+    Our menu: Chicken Biryani (৳150), Murug Polaw (৳120), Beef Biryani (৳220), Mutton Biryani (৳200), Kacchi (৳299), Afgani Polaw (৳350), Rice (৳20), Beef (৳150), Mutton Curry (৳160), Ilish Fish (৳200), Chingri Curry (৳160).
+
+    Starting a new order. Please specify food items and quantities.
+    Available items: Chicken Biryani, Murug Polaw, Beef Biryani, Mutton Biryani, Kacchi, Afgani Polaw, Rice, Beef, Mutton Curry, Ilish Fish, Chingri Curry.
+
+
+Intent= order.add - context: ongoing-order
+==========================================
+Training phrases:
+    Give me 2 chicken biryani and 1 kacchi
+    I'd like to order 1 beef biryani and 2 mutton curry please
+    Can I get 1 afgani polaw and 2 chingri curry?
+    Please give me 3 rice and 1 ilish fish
+    2 mutton biryani and 1 murug polaw
+    I want 1 kacchi and 2 chicken biryani
+    Add 1 beef and 2 rice to my order
+    Also add 1 ilish fish
+    Moreover, include 2 chingri curry
+    Additionally, I'd like 1 afgani polaw
+    3 chicken biryani
+    Oh yes, add one mutton curry as well
+    In addition, add 2 beef biryani
+
+
+Intent= order.complete - context: ongoing-order
+==========================================
+Training phrases:
+    Nope
+    That's all I needed
+    Done ordering
+    Place the order
+    Done
+    That's it
+    Confirm order
+    Yes place it
+
+
+Intent= order.remove - context: ongoing-order
+==========================================
+Training phrases:
+    No beef biryani in my order, please remove
+    Remove kacchi from my order
+    I'd like to exclude chicken biryani please
+    I no longer want the mutton curry, please remove it
+    Take the ilish fish off my order
+    Delete rice from my order
+    Please remove chingri curry
+    Get rid of mutton biryani
+    I don't want the afgani polaw
+    Remove beef from my order
+    Can you remove murug polaw?
+
+
+Intent= track.order
+===================
+Training phrases:
+    check the status of my order
+    track order
+    track existing order
+    where is my order
+
+Text response:
+    Sure! What is your order ID?
+    Definitely. Please enter your order ID.
+    Of course. What is your order ID?
+
+
+Intent= track.order - context: ongoing-tracking
+==================================================
+Training phrases:
+    how about 32
+    how about 40?
+    here it is - 63321
+    here you go: 123
+    here is my order number 675
+    id is 453
+    here is my order id # 341
+    7890
+    123
+    345

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Niom's Restaurant</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+
+        <header>
+            <div class="header-brand">
+                <h1>🍽️ Niom's Restaurant</h1>
+                <p class="tagline">Authentic Flavors of Bangladesh</p>
+            </div>
+            <nav>
+                <a href="#home">HOME</a> |
+                <a href="#menu">MENU</a> |
+                <a href="#location">LOCATION</a> |
+                <a href="#aboutus">ABOUT US</a> |
+                <a href="#contactus">CONTACT US</a>
+            </nav>
+        </header>
+
+        <!-- ── BANNER ── -->
+        <section id="home" class="banner-section">
+            <img src="banner.jpg" alt="Niom's Restaurant — Fresh & Delicious">
+        </section>
+
+        <!-- ── MENU ── -->
+        <section id="menu">
+            <h2>Our Menu</h2>
+            <p class="menu-intro">Fresh, authentic Bangladeshi cuisine made with love — all prices in BDT.</p>
+
+            <!-- Price table -->
+            <div class="menu-table-wrapper">
+                <table class="menu-table">
+                    <thead>
+                        <tr><th>#</th><th>Item</th><th>Price (BDT)</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>1</td><td>Chicken Biryani</td><td>৳150</td></tr>
+                        <tr><td>2</td><td>Murug Polaw</td><td>৳120</td></tr>
+                        <tr><td>3</td><td>Beef Biryani</td><td>৳220</td></tr>
+                        <tr><td>4</td><td>Mutton Biryani</td><td>৳200</td></tr>
+                        <tr><td>5</td><td>Kacchi</td><td>৳299</td></tr>
+                        <tr><td>6</td><td>Afgani Polaw</td><td>৳350</td></tr>
+                        <tr><td>7</td><td>Rice</td><td>৳20</td></tr>
+                        <tr><td>8</td><td>Beef</td><td>৳150</td></tr>
+                        <tr><td>9</td><td>Mutton Curry</td><td>৳160</td></tr>
+                        <tr><td>10</td><td>Ilish Fish</td><td>৳200</td></tr>
+                        <tr><td>11</td><td>Chingri Curry</td><td>৳160</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Food photo strips -->
+            <div class="food-photos">
+                <!-- Strip 1: Murug Polaw · Beef Biryani · Mutton Biryani · Afgani Polaw -->
+                <img src="menu1.jpg" alt="Murug Polaw, Beef Biryani, Mutton Biryani, Afgani Polaw">
+                <!-- Strip 2: Rice · Beef · Ilish Fish -->
+                <img src="menu2.jpg" alt="Rice, Beef, Ilish Fish">
+                <!-- Strip 3: Chicken Biryani · Kacchi · Mutton Curry · Chingri Curry -->
+                <img src="menu3.jpg" alt="Chicken Biryani, Kacchi, Mutton Curry, Chingri Curry">
+            </div>
+        </section>
+
+        <!-- ── LOCATION ── -->
+        <section id="location">
+            <h2>Location</h2>
+            <p>📍 Sylhet, Bangladesh</p>
+        </section>
+
+        <!-- ── ABOUT US ── -->
+        <section id="aboutus">
+            <h2>About Us</h2>
+            <p>
+                Welcome to <strong>Niom's Restaurant</strong> — your destination for authentic Bangladeshi cuisine.
+                From our signature Kacchi Biryani to freshly caught Ilish Fish curry, every dish is prepared
+                with the finest local ingredients and traditional recipes passed down through generations.
+                We take pride in delivering the true taste of Bangladesh, right to your door.
+            </p>
+        </section>
+
+        <!-- ── CONTACT ── -->
+        <section id="contactus">
+            <h2>Contact Us</h2>
+            <p>Got questions or want to place an order? We'd love to hear from you!</p>
+            <p>📧 Email: <a href="mailto:niomraiyan@gmail.com">niomraiyan@gmail.com</a></p>
+            <p>💬 Or just use the chatbot below — available 24/7!</p>
+        </section>
+
+        <footer>
+            <p>© 2024 Niom's Restaurant — Sylhet, Bangladesh. All rights reserved.</p>
+        </footer>
+
+    </div>
+
+    <!-- Dialogflow Chatbot — replace YOUR_AGENT_ID_HERE with your Dialogflow agent URL -->
+    <iframe
+        class="chat-bot"
+        width="350"
+        height="430"
+        allow="microphone;"
+        src="https://console.dialogflow.com/api-client/demo/embedded/YOUR_AGENT_ID_HERE">
+    </iframe>
+</body>
+</html>
